@@ -10,7 +10,7 @@ const ProductAll = () => {
   const getProducts = async () => {
     let searchQuery = query.get("q") || "";
     console.log(searchQuery);
-    let url = `http://localhost:3004/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/zerothhan/noona-hnm-react-router-practice/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
 
